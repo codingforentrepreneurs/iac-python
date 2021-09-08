@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+gunicorn
+requests
+pytest
+pre-commit
