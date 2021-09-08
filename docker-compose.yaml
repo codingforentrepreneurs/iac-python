@@ -1,0 +1,20 @@
+version: '3'
+services:
+    web_thunder:
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile
+        expose:
+            - 8812
+        environment:
+            - PORT=8812
+    nginx:
+        restart: always
+        build:
+            context: ./nginx
+            dockerfile: Dockerfile
+        ports:
+            - 80:80
+        depends_on:
+            - web_thunder
