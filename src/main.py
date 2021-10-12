@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def home_view():
-    return  {"hello": "world"}
+    return  {"hello": "world", "what": "iac is amazing"}
 
 
 @app.post("/")
