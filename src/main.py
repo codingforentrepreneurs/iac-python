@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def home_view():
-    return  {"hello": "world", "cron-build": "works"}
+    return  {"hello": "world", "cron-build": "this is working..."}
 
 
 @app.post("/")
